@@ -20,7 +20,9 @@ export default App;
 
 const Styled = {
     RoutesWrapper: styled.div`
-        border: 1px solid #f00;
-        min-height: 100vh;
+        /* border: 1px solid #f00; */
+        margin-top: 100px;
+        min-height: calc(100vh - 200px);
+        overflow: auto;
     `,
 };
