@@ -12,7 +12,6 @@ body {
     height: 100%;
 }
 
-body {
-    background-color: rgba(10, 9, 15, 1);
-    color: rgba(239, 239, 229, 1);
+html {
+    scroll-behavior: smooth !important;
 }
