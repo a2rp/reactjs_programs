@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const App = () => {
-    return <Styled.Wrapper>App</Styled.Wrapper>;
+    return <Styled.Wrapper>React App</Styled.Wrapper>;
 };
 
 export default App;
