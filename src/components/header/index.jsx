@@ -19,16 +19,16 @@ const Header = () => {
     <Styled.Wrapper>
       <Styled.Main>
         <Styled.Brand to="/" onClick={closeMenu} aria-label="React programs home">
-          <img src="/reactjs_programs/logo.png" alt="Ashish Ranjan logo" />
+          <img src={import.meta.env.BASE_URL + "logo.png"} alt="Ashish Ranjan logo" />
           <span><small>REACT PROGRAMS</small><strong>Practice Lab</strong></span>
         </Styled.Brand>
-        <button className="menu-button" type="button" onClick={() => setMenuOpen((open) => !open)} aria-expanded={menuOpen} aria-label={menuOpen ? "Close menu" : "Open menu"}>
-          {menuOpen ? <FiX /> : <FiMenu />}
+        <button className="menu-button" type="button" onClick={() => setMenuOpen((open) => !open)} aria-expanded={menuOpen} aria-controls="primary-navigation" aria-label={menuOpen ? "Close menu" : "Open menu"}>
+          {menuOpen ? <FiX aria-hidden="true" /> : <FiMenu aria-hidden="true" />}
         </button>
-        <Styled.Nav className={menuOpen ? "open" : ""} aria-label="Primary navigation">
-          <a href="/reactjs_programs/#programs" onClick={closeMenu}><FiCode /> Programs</a>
-          <a href="/reactjs_programs/#about" onClick={closeMenu}><FiClock /> About</a>
-          <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>React guide <FiArrowUpRight /></a>
+        <Styled.Nav id="primary-navigation" className={menuOpen ? "open" : ""} aria-label="Primary navigation">
+          <a href={`${import.meta.env.BASE_URL}#programs`} onClick={closeMenu}><FiCode aria-hidden="true" /> Programs</a>
+          <a href={`${import.meta.env.BASE_URL}#about`} onClick={closeMenu}><FiClock aria-hidden="true" /> About</a>
+          <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>React guide <FiArrowUpRight aria-hidden="true" /></a>
         </Styled.Nav>
         <Styled.DateTime aria-label={`Current date and time: ${formattedDate} ${formattedTime}`}>
           <span>{formattedDate}</span><strong>{formattedTime}</strong>

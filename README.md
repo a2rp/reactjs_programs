@@ -1,6 +1,6 @@
 # React Programs
 
-A focused React practice playground for learning components, JSX, routing, and reusable UI patterns through small exercises.
+A concise React learning page introducing component thinking, routing, and reusable UI patterns, with a prompt for your next small experiment.
 
 ![React Programs preview](screenshot.png)
 
@@ -8,6 +8,7 @@ A focused React practice playground for learning components, JSX, routing, and r
 
 - Fixed responsive header with live date and time.
 - Practice cards for core React ideas.
+- A simple prompt for extending the starter with your own components and experiments.
 - React Router routes with lazy loading and a not-found page.
 - Local branding assets and icon-only social and support links.
 - GitHub Pages deployment setup.

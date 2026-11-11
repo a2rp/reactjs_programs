@@ -4,6 +4,11 @@ html { scroll-behavior: smooth; }
 body { margin: 0; min-width: 320px; }
 a, button { font: inherit; }
 button:focus-visible, a:focus-visible { outline: 3px solid rgba(96,196,255,.42); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+}
 .app { background: #06101e; min-height: 100vh; }
 .page-content { padding-top: 78px; }
 .page-shell { margin: 0 auto; max-width: 1240px; width: calc(100% - 10vw); }

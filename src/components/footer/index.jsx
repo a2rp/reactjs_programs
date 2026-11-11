@@ -19,15 +19,15 @@ const Footer = () => (
   <Styled.Wrapper>
     <Styled.Main>
       <Styled.Brand>
-        <img src="/reactjs_programs/logo.png" alt="Ashish Ranjan logo" />
+        <img src={import.meta.env.BASE_URL + "logo.png"} alt="Ashish Ranjan logo" />
         <span><strong>React Programs</strong><small>Small exercises, clear progress.</small></span>
       </Styled.Brand>
       <Styled.LinkGroups>
-        <div><p>Connect</p><span>{connectLinks.map(({ label, href, icon }) => <a href={href} key={label} target="_blank" rel="noopener noreferrer" aria-label={label} title={label}>{React.createElement(icon)}</a>)}</span></div>
-        <div><p>Support</p><span>{supportLinks.map(({ label, href, icon }) => <a href={href} key={label} target="_blank" rel="noopener noreferrer" aria-label={label} title={label}>{React.createElement(icon)}</a>)}</span></div>
+        <div><p>Connect</p><span>{connectLinks.map(({ label, href, icon }) => <a href={href} key={label} target="_blank" rel="noopener noreferrer" aria-label={label} title={label}>{React.createElement(icon, { "aria-hidden": "true" })}</a>)}</span></div>
+        <div><p>Support</p><span>{supportLinks.map(({ label, href, icon }) => <a href={href} key={label} target="_blank" rel="noopener noreferrer" aria-label={label} title={label}>{React.createElement(icon, { "aria-hidden": "true" })}</a>)}</span></div>
       </Styled.LinkGroups>
       <Styled.Bottom>
-        <span>Copyright © {new Date().getFullYear()} <a href="https://www.ashishranjan.net/" target="_blank" rel="noopener noreferrer">Ashish Ranjan</a></span>
+        <span>Copyright &copy; {new Date().getFullYear()} <a href="https://www.ashishranjan.net/" target="_blank" rel="noopener noreferrer">Ashish Ranjan</a></span>
         <span>React Router playground</span>
       </Styled.Bottom>
     </Styled.Main>

@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "reactjs-programs",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,11 +12,6 @@
     "deploy": "npx --yes gh-pages -d dist -b gh-pages"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@mui/material": "^6.4.7",
-    "framer-motion": "^12.5.0",
-    "lenis": "^1.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.7.0",
